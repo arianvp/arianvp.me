@@ -1,3 +1,3 @@
 #! /bin/sh
-cp -R ./config/*.nix /etc/nixos
+cp -R ./config/* /etc/nixos
 nixos-rebuild switch
