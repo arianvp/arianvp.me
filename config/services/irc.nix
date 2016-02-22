@@ -7,7 +7,7 @@
     serviceConfig = {
       Type = "forking";
       User = "nixos";
-      ExecStart = ''${pkgs.tmux}/bin/tmux new-session -d -s irc -n irc ${pkgs.irssi}/bin/irssi'';
+      ExecStart = ''${pkgs.tmux}/bin/tmux new-session -d -s irc -n irc ${pkgs.weechat}/bin/weechat'';
       ExecStop = ''${pkgs.tmux}/bin/tmux kill-session -t irc'';
     };
   };
