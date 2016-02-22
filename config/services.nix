@@ -9,5 +9,5 @@
     passwordAuthentication = false;
   };
 
-  services.ngnix.enable = true;
+  services.nginx.enable = true;
 }
