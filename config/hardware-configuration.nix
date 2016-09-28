@@ -13,7 +13,7 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/vda";
+    { device = "/dev/vda2";
       fsType = "btrfs";
     };
 
