@@ -8,5 +8,5 @@ in
     isNormalUser = true;
     extraGroups = ["wheel"];
     openssh.authorizedKeys.keys = [ laptop ];
-  };
-}
+  }
+};
