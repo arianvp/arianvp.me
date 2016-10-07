@@ -7,5 +7,6 @@
       ./users.nix
       ./services.nix
       ./security-patches.nix
+      ./security.nix
     ];
 }
