@@ -9,4 +9,4 @@ in
     extraGroups = ["wheel"];
     openssh.authorizedKeys.keys = [ laptop ];
   }
-};
+}
