@@ -9,11 +9,4 @@ in
     extraGroups = ["wheel"];
     openssh.authorizedKeys.keys = [ laptop ];
   };
-  users.extraUsers.arian = {
-    isNormalUser = true;
-    extraGroups = ["wheel"];
-    openssh.authorizedKeys.keys = [ laptop ];
-  };
-
-  security.sudo.wheelNeedsPassword = false;
 }
