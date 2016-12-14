@@ -1,6 +1,5 @@
 { config, pkgs, lib, ...}:
 {
-
   systemd.services.ircSession = {
     wantedBy = [ "multi-user.target" ];
     after = [ "network.target" ];
