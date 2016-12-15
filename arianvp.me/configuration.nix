@@ -1,5 +1,9 @@
 { config, pkgs, ...}:
 {
+  nix.gc = {
+    automatic = true;
+    dates = "03:00";
+  };
   imports =
     [
       ./hardware-configuration.nix
