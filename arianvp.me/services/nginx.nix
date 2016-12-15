@@ -7,6 +7,7 @@
     recommendedOptimisation = true;
     recommendedProxySettings = true;
     recommendedTlsSettings = true;
+    sslDhparam = "/run/keys/dhparam.pem";
     virtualHosts = {
       "arianvp.me" = {
         enableACME = true;
