@@ -1,6 +1,6 @@
 { config, pkgs, ...}:
 {
-  nixpkgs.config.packageOverrides = pkgs: rec { simple_le = pkgs.callPackage ../../nixpkgs/pkgs/tools/admin/simple_le {}; };
+  nixpkgs.config.packageOverrides = pkgs: rec { simp_le = pkgs.callPackage ../../nixpkgs/pkgs/tools/admin/simp_le {}; };
   services.nginx = {
     enable = true;
     recommendedGzipSettings = true;
@@ -9,8 +9,8 @@
     recommendedTlsSettings = true;
     virtualHosts = {
       "arianvp.me" = {
-        enableACME = false;
-        forceSSL = false;
+        enableACME = true;
+        forceSSL = true;
         locations."/" = {
           root = "/var/www/arianvp.me";
           index = "index.html";
