@@ -39,7 +39,7 @@ $ usermod -aG nixbld nixbld
 $ systemctl enable nix-daemon.socket
 $ source /etc/profile.d/nix.sh
 $ nix-env -i nixops
-$ nix-channel --add https://nixos.org/channels/nixos-16.09-small
+$ nix-channel --add https://nixos.org/channels/nixos-16.09-small nixos
 $ nix-channel --update
 ```
 
@@ -52,7 +52,7 @@ $ nix-env -i nixops
 ## Creating a deployment
 
 ```
-$ nixops create deployment.nix
+$ nixops create -I $HOME/.nix-defexpr/channels/nixos deployment.nix
 ```
 
 
@@ -61,7 +61,7 @@ $ nixops create deployment.nix
 We can now provision `arianvp.me` with the following command:
 
 ```
-$ nixops deploy
+$ nixops deploy -I $HOME/.nix-defexpr/channels/nixos
 ```
 
 
