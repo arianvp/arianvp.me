@@ -71,6 +71,6 @@ $ nixops deploy -I $HOME/.nix-defexpr/channels/nixos-unstable
 Change any of the `*.nix` files to suit your needs and simply type
 
 ```
-$ nixops deploy
+$ nixops deploy -I $HOME/.nix-defexpr/channels/nixos-unstable
 ```
 
