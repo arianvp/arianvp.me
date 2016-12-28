@@ -1,4 +1,5 @@
 {
+  network.enableRollback = true;
   "arianvp.me" =
   { pkgs, config, ...}:
   {
