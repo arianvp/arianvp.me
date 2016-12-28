@@ -62,7 +62,7 @@ $ nixops create -I $HOME/.nix-defexpr/channels/nixos deployment.nix
 We can now provision `arianvp.me` with the following command:
 
 ```
-$ nixops deploy -I $HOME/.nix-defexpr/channels/nixos
+$ nixops deploy -I $HOME/.nix-defexpr/channels/nixos-unstable
 ```
 
 
