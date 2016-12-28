@@ -1,6 +1,11 @@
 { config, pkgs, ...}:
 {
-  nixpkgs.config.packageOverrides = pkgs: rec { simp_le = pkgs.callPackage ../../nixpkgs/pkgs/tools/admin/simp_le {}; };
+  /* Fuck the NSA, we use our own DH param, and it's 2048 bits */
+  deployment.keys."dhparam.pem" = {
+    user = "nginx";
+    group = "nginx";
+    text = builtins.readFile ../../keys/dhparam.pem;
+  };
   services.nginx = {
     enable = true;
     recommendedGzipSettings = true;
