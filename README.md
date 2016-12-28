@@ -16,7 +16,7 @@ https://d3g5gsiof5omrk.cloudfront.net/nixos/16.09/nixos-16.09.1229.f52eaf4/nixos
 3. Change configuration.nix to contain the following lines:
 
 ```nix
-
+{
   users.extraUsers.root = {
     openssh.authorizedKeys.keys =
       [
@@ -24,6 +24,7 @@ https://d3g5gsiof5omrk.cloudfront.net/nixos/16.09/nixos-16.09.1229.f52eaf4/nixos
       ];
   };
   services.openssh.enable = true;
+}
 ```
 
 4. Point DNS of `arianvp.me` to the newly created server
