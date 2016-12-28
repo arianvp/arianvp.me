@@ -39,7 +39,7 @@ $ usermod -aG nixbld nixbld
 $ systemctl enable nix-daemon.socket
 $ source /etc/profile.d/nix.sh
 $ nix-env -i nixops
-$ nix-channel --add https://nixos.org/channels/nixos-16.09-small nixos
+$ nix-channel --add https://nixos.org/channels/nixos-unstable-small nixos-unstable
 $ nix-channel --update
 ```
 
