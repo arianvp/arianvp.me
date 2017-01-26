@@ -1,3 +1,7 @@
+# This file can be used to modify a subtree of our nix store quickly with a security patch
+# before Hydra has built it. 
+# Add the CVE number as reference, such that we clearly communicate _what_ we hotpatched
+# Once fixed upstream, it can be commented again,  with a link to the hydra build that fixed it
 { config, pkgs, ...}:
 {
   system.replaceRuntimeDependencies = with pkgs.lib;
