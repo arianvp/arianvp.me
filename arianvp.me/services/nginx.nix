@@ -20,8 +20,14 @@
         locations."/" = {
           root = "/var/www/arianvp.me";
           index = "index.html";
+          extraConfig = ''
+          add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+        '';
         };
       };
     };
+    appendHttpConfig = ''
+    access_log stderr;
+    '';
   };
 }
